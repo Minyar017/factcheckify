@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <center> <img src="logo.png" height="68" width="68" alt=" FactChekiFy Logo" /></center>
+    <h1>FactChekiFy</h1>
+   
+    
+    <form action="donnees.php" method="post">
+        <label for="email">Email de l'utilisateur :</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="new_first_name">Nouveau prénom :</label>
+        <input type="text" id="new_first_name" name="new_first_name" required><br><br>
+        <label for="new_first_name">Nouveau nom :</label>
+        <input type="text" id="new_last_name" name="new_last_name" required><br><br>
+        
+        <label for="age"
+          >Modifier  votre âge(Années):
+          <input id="nage" type="number" name="nage" min="13" max="120"
+        />
+        
+        <label for="nreferrer"
+          >Modifier la catégorie (Obligatoire):
+          <select id="nreferrer" name="nreferrer">
+            <option value="Finance"> Finance  </option>
+            <option value="Art"> Art </option>
+            <option value="Sante"> Sante </option>
+            <option value="Sport"> Sport</option>
+            <option value="Education">Education</option>
+            <option value="Business">Business </option>
+            <option value="Droit">Droit </option>
+            <option value="Technologies ">Technologies </option>
+
+          </select>
+        </label>
+        <label for="bio"
+          >Modifier la biographie :
+          <textarea
+            id="nbio"
+            name="nbio"
+            rows="3"
+            cols="30"
+            placeholder="votre poste ..."
+          ></textarea>
+        </label>
+      </fieldset>
+           
+      <label for="terms-and-conditions">
+        <input
+          class="inline"
+          id="terms-and-conditions"
+          type="checkbox"
+          required
+          name="terms-and-conditions"
+        />
+       J'accepte les termes et conditions
+      </label>
+      <input type="submit" value="Mettre à jour les donnees">
+      <a href="profile.php"><img src="retour.png">  </a>
+    </form>
+    <section class="dots-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </section>
+    <script src="js.js"></script>
+  </body>
+</html>
+
+  <!--    
+ 
