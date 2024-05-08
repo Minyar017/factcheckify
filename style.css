@@ -1,0 +1,251 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(242, 229, 213);
+  color: #0c3c8b;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #0c3c8b;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  background-color: #dedada;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  padding: 8px; /* Modification ici */
+  box-sizing: border-box; /* Modification ici */
+}
+
+input,
+textarea {
+  border: 1px solid #09033f;
+  color: #030001;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #0c3c8b;
+  border: none;
+  border-radius: 5px;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline {
+  display: inline;
+}
+
+a {
+  color: #02024d;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.titre-expert {
+  margin-left: 10px;
+}
+
+/* Styles pour la partie aside */
+aside {
+  background-color: #f2f2f2;
+  width: 250px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour la liste à l'intérieur de l'aside */
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles pour chaque élément de liste */
+aside li {
+  margin-bottom: 10px;
+}
+
+/* Styles pour les boutons à l'intérieur de l'aside */
+aside button {
+  width: 100%;
+  padding: 10px;
+  background-color: #141489;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styles pour les boutons au survol */
+aside button:hover {
+  background-color: #141489;
+}
+
+/* Styles pour la partie section */
+section {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styles pour le conteneur principal */
+.wrapper {
+  display: flex;
+}
+
+/* Styles pour ajuster la mise en page sur les petits écrans */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  aside,
+  section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles pour la barre de navigation */
+#nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cfcdcd;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Styles pour ajuster la mise en page de la section principale au-dessus de la barre de navigation */
+.wrapper {
+  margin-bottom: 50px;
+}
+
+header {
+  padding-top: 50px;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+button.publication {
+  font-size: 18px;
+  color: #797878dd;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+a {
+  text-decoration: none; /* Supprimez la soulignement du texte */
+}
+
+button.publication:focus,
+button.publication:hover {
+  color: #141489;
+}
+
+button.publication:focus:after,
+button.publication:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button.publication:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #141489;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+a {
+  color: #141489;
+}
+
+.image {
+  text-align: right;
+}

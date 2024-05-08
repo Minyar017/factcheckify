@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FactChekiFy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <center>
+      <img src="logo.png" height="68" width="68" alt=" FactChekiFy Logo" />
+      <h1>FactChekiFy</h1>
+    </center>
+    <p>
+      <br />
+
+      <a href="profile.html">
+        <img src="user.png" height="32" width="32" alt=" Profil" />Profil</a
+      >&nbsp; &nbsp;
+      <a href="expert.html">
+        <img src="home.png" height="32" width="32" alt=" acceuil" />acceuil</a
+      >
+      <br />
+    </p>
+
+    <main class="content">
+      <form class="f1">
+        <section>
+          <textarea placeholder="Partagez un fait avec le monde entier...">
+Quoi de neuf ?</textarea
+          >
+          <label for="referrer">Choisir une catégorie (votre domaine):</label>
+          <select id="referrer" name="referrer">
+            <option value="0">Choisir une catégorie</option>
+            <option value="1">Art</option>
+            <option value="2">Santé</option>
+            <option value="3">Sport</option>
+            <option value="4">Éducation</option>
+            <option value="5">Business</option>
+            <option value="6">Droit</option>
+            <option value="7">Technologies</option>
+            <option value="8">Finance</option>
+          </select>
+          <button type="submit">Publier</button>
+        </section>
+      </form>
+    </main>
+    <script src="js.js"></script>
+  </body>
+</html>

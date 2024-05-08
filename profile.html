@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Profil de l'utilisateur</title>
+    <link rel="stylesheet" href="profile.css" />
+    <!-- Inclure un fichier CSS pour le style -->
+</head>
+<body>
+<header>
+    <div class="logo-and-title">
+        <img src="logo.png" height="68" width="68" alt="FactChekiFy Logo" />
+        <h1 class="titre-expert">FactChekiFy</h1>
+    </div>
+</header>
+
+<center>
+    <div class="card" >
+        <div class="card__img"></div>
+        <div class="card__avatar">
+            <img src="profile (2).png">
+            <circle cx="89" cy="65" fill="#fbc0aa" r="7"></circle>
+        </div>
+        <div class="card__title" id="first-name"></div>
+        <div class="card__subtitle"></div>
+
+        <!-- Formulaire pour les informations de l'utilisateur -->
+        <form action="profile.php" method="post">
+            <label for="first-name">Prénom :</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
+
+            <label for="last-name">Nom :</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="new-password"> mot de passe :</label>
+            <input type="password" id="new-password" name="new-password" required><br><br>
+
+            <label for="bio">Biographie :</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="account-type">Type de compte :</label>
+            <select id="account-type" name="account-type" required>
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+                <option value="other">Autre</option>
+            </select><br><br>
+
+            <label for="referrer">Catégorie :</label>
+            <input type="text" id="referrer" name="referrer"><br><br>
+
+            <input type="submit" value="Enregistrer">
+        </form>
+        <!-- Fin du formulaire -->
+
+        <div class="card__wrapper">
+            <button class="card__btn"><a href="expert.html">Accueil</a></button>
+            <button class="card__btn card__btn-solid"><a href="connection.html">Déconnexion</a></button>
+        </div>
+    </div>
+</center>
+
+<footer>
+    <p>&copy; 2024 Votre Site. Tous droits réservés.</p>
+</footer>
+<script src="javaScript.js"></script>
+</body>
+</html>
